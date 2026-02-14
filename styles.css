@@ -858,8 +858,15 @@ body {
   }
 
   .yes-header {
+    position: sticky;
+    top: 0;
+    z-index: 10;
     min-height: 64px;
     margin-bottom: 1.25rem;
+    background: linear-gradient(to bottom, rgba(255, 241, 245, 0.98) 0%, rgba(255, 241, 245, 0.95) 85%, transparent 100%);
+    backdrop-filter: blur(8px);
+    padding-bottom: 0.5rem;
+    -webkit-backdrop-filter: blur(8px);
   }
 
   /* Let layout size by content so both cards show letter + photos properly */
