@@ -112,13 +112,6 @@
       if (index >= fullText.length) {
         window.clearInterval(typewriterTimer);
         typewriterTimer = null;
-        // On mobile, keep header and top of letter in view after typewriter finishes
-        requestAnimationFrame(() => {
-          const app = document.querySelector("body.yes-mode .app");
-          if (app && app.scrollHeight > app.clientHeight && window.innerWidth <= 720) {
-            app.scrollTop = 0;
-          }
-        });
         return;
       }
       letterBody.textContent = fullText.slice(0, index + 1);
