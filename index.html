@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+    />
+    <title>Will You Be My Valentine?</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:wght@500;700&family=Inter:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="app" class="app">
+      <!-- Landing Screen -->
+      <section id="landing-screen" class="screen screen--active">
+        <div class="background-hearts" aria-hidden="true"></div>
+        <div class="card card--landing">
+          <h1 class="title" id="landing-title">
+            Will you be my valentine?
+          </h1>
+          <p class="subtitle" id="landing-subtitle">
+            I promise there is only one right answer.
+          </p>
+          <div class="buttons">
+            <button
+              id="yes-button"
+              class="btn btn--primary"
+              type="button"
+            >
+              Yes
+            </button>
+            <button
+              id="no-button"
+              class="btn btn--ghost"
+              type="button"
+            >
+              No
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Yes Experience Screen -->
+      <section id="yes-screen" class="screen screen--hidden" aria-hidden="true">
+        <div class="background-hearts background-hearts--subtle" aria-hidden="true"></div>
+        <div class="yes-content">
+        <header class="yes-header">
+          <div class="yes-header-flowers yes-header-flowers--left" aria-hidden="true">
+            <svg viewBox="0 0 40 40" class="flower flower-1"><ellipse cx="20" cy="10" rx="5" ry="9" fill="#e8a0b8"/><ellipse cx="20" cy="10" rx="5" ry="9" fill="#e8a0b8" transform="rotate(72 20 20)"/><ellipse cx="20" cy="10" rx="5" ry="9" fill="#e8a0b8" transform="rotate(144 20 20)"/><ellipse cx="20" cy="10" rx="5" ry="9" fill="#e8a0b8" transform="rotate(216 20 20)"/><ellipse cx="20" cy="10" rx="5" ry="9" fill="#e8a0b8" transform="rotate(288 20 20)"/><circle cx="20" cy="20" r="4" fill="#c97b8e"/></svg>
+            <svg viewBox="0 0 40 40" class="flower flower-2"><ellipse cx="20" cy="10" rx="5" ry="9" fill="#f5b8c9"/><ellipse cx="20" cy="10" rx="5" ry="9" fill="#f5b8c9" transform="rotate(72 20 20)"/><ellipse cx="20" cy="10" rx="5" ry="9" fill="#f5b8c9" transform="rotate(144 20 20)"/><ellipse cx="20" cy="10" rx="5" ry="9" fill="#f5b8c9" transform="rotate(216 20 20)"/><ellipse cx="20" cy="10" rx="5" ry="9" fill="#f5b8c9" transform="rotate(288 20 20)"/><circle cx="20" cy="20" r="4" fill="#e8a0b8"/></svg>
+            <svg viewBox="0 0 40 40" class="flower flower-3"><ellipse cx="20" cy="10" rx="4" ry="7" fill="#d4849a"/><ellipse cx="20" cy="10" rx="4" ry="7" fill="#d4849a" transform="rotate(72 20 20)"/><ellipse cx="20" cy="10" rx="4" ry="7" fill="#d4849a" transform="rotate(144 20 20)"/><ellipse cx="20" cy="10" rx="4" ry="7" fill="#d4849a" transform="rotate(216 20 20)"/><ellipse cx="20" cy="10" rx="4" ry="7" fill="#d4849a" transform="rotate(288 20 20)"/><circle cx="20" cy="20" r="3" fill="#c97b8e"/></svg>
+          </div>
+          <h2 class="yes-header-name">Naqiyah</h2>
+          <div class="yes-header-flowers yes-header-flowers--right" aria-hidden="true">
+            <svg viewBox="0 0 40 40" class="flower flower-1"><ellipse cx="20" cy="10" rx="5" ry="9" fill="#e8a0b8"/><ellipse cx="20" cy="10" rx="5" ry="9" fill="#e8a0b8" transform="rotate(72 20 20)"/><ellipse cx="20" cy="10" rx="5" ry="9" fill="#e8a0b8" transform="rotate(144 20 20)"/><ellipse cx="20" cy="10" rx="5" ry="9" fill="#e8a0b8" transform="rotate(216 20 20)"/><ellipse cx="20" cy="10" rx="5" ry="9" fill="#e8a0b8" transform="rotate(288 20 20)"/><circle cx="20" cy="20" r="4" fill="#c97b8e"/></svg>
+            <svg viewBox="0 0 40 40" class="flower flower-2"><ellipse cx="20" cy="10" rx="5" ry="9" fill="#f5b8c9"/><ellipse cx="20" cy="10" rx="5" ry="9" fill="#f5b8c9" transform="rotate(72 20 20)"/><ellipse cx="20" cy="10" rx="5" ry="9" fill="#f5b8c9" transform="rotate(144 20 20)"/><ellipse cx="20" cy="10" rx="5" ry="9" fill="#f5b8c9" transform="rotate(216 20 20)"/><ellipse cx="20" cy="10" rx="5" ry="9" fill="#f5b8c9" transform="rotate(288 20 20)"/><circle cx="20" cy="20" r="4" fill="#e8a0b8"/></svg>
+            <svg viewBox="0 0 40 40" class="flower flower-3"><ellipse cx="20" cy="10" rx="4" ry="7" fill="#d4849a"/><ellipse cx="20" cy="10" rx="4" ry="7" fill="#d4849a" transform="rotate(72 20 20)"/><ellipse cx="20" cy="10" rx="4" ry="7" fill="#d4849a" transform="rotate(144 20 20)"/><ellipse cx="20" cy="10" rx="4" ry="7" fill="#d4849a" transform="rotate(216 20 20)"/><ellipse cx="20" cy="10" rx="4" ry="7" fill="#d4849a" transform="rotate(288 20 20)"/><circle cx="20" cy="20" r="3" fill="#c97b8e"/></svg>
+          </div>
+        </header>
+        <div class="yes-layout">
+          <div class="card card--letter">
+            <h2 id="letter-title">To my valentine</h2>
+            <div id="letter-body" class="letter-body"></div>
+          </div>
+          <div class="card card--photos">
+            <h3 class="photos-title">Some of my favorite moments with you</h3>
+            <div id="photos-container" class="photos-container"></div>
+          </div>
+        </div>
+        </div>
+      </section>
+    </div>
+
+    <img
+      src="assets/corner-mascot.png"
+      alt=""
+      class="corner-mascot"
+      aria-hidden="true"
+    />
+
+    <script src="./config.js"></script>
+    <script src="./main.js"></script>
+  </body>
+</html>
+

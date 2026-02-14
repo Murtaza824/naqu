@@ -1,0 +1,13 @@
+{
+  "name": "valentine-web-experience",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A small, romantic single-page site asking: Will you be my valentine?",
+  "scripts": {
+    "start": "npx serve ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "UNLICENSED"
+}
+
