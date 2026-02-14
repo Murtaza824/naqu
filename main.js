@@ -73,7 +73,7 @@
       const img = document.createElement("img");
       img.loading = "lazy";
       img.alt = photo.caption || "Photo of us";
-      img.src = photo.src;
+      img.src = new URL(photo.src, document.baseURI || window.location.href).href;
 
       const caption = document.createElement("div");
       caption.className = "photo-caption";

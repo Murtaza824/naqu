@@ -2,6 +2,15 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <script>
+      (function () {
+        var path = location.pathname.replace(/\/[^/]*$/, "/") || "/";
+        if (document.querySelector('base')) return;
+        var base = document.createElement("base");
+        base.href = location.origin + path;
+        document.head.insertBefore(base, document.head.firstChild);
+      })();
+    </script>
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1.0, viewport-fit=cover"
