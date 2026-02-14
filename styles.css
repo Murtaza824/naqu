@@ -868,16 +868,28 @@ body {
 
   /* Scroll only the letter + photos block so header always stays visible */
   .yes-layout {
+    display: flex;
+    flex-direction: column;
     flex: 1 1 0;
     min-height: 0;
     overflow-y: auto;
     -webkit-overflow-scrolling: touch;
     gap: 1.5rem;
+    grid-template-columns: unset;
   }
 
   .yes-layout .card {
+    flex: 0 0 auto;
     padding: 1.5rem 1.25rem;
     min-height: 0;
+  }
+
+  .card--letter {
+    display: block;
+  }
+
+  .card--photos {
+    display: block;
   }
 
   .letter-body {
